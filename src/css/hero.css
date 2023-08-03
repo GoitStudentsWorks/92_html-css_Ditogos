@@ -1,24 +1,96 @@
-/* Hero.Developer:Prenrelo(Jarek) */
-.hero-section {
-  margin-bottom: 80px;
-}
-.hero-backgroung-image {
-  display: flex;
-}
-.hero-explore {
-  display: flex;
-  flex-direction: column;
-  padding-left: 124px;
+/* Hero.Developer:Prenrelo(Jarek) and Yuliya Turasova */
+@media only screen and (min-width: 375px) {
+  .hero-section {
+    margin-bottom: 80px;
+  }
 }
 
+@media only screen and (min-width: 768px) {
+  .hero-section {
+    margin-bottom: 100px;
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .hero-section {
+    margin-bottom: 164px;
+    position: relative;
+  }
+}
+
+.hero-container::before {
+  content: '';
+  position: absolute;
+  width: 279px;
+  height: 279px;
+  transform: rotate(-44.916deg);
+  border-radius: 279px;
+  opacity: 0.9;
+  background: var(--color-blur-one);
+  filter: blur(100px);
+  top: 413px;
+  right: 176px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-container::before {
+    content: '';
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.094deg);
+    border-radius: 414px;
+    opacity: 0.9;
+    background: var(--color-blur-one);
+    filter: blur(100px);
+    top: 552px;
+    right: 540px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-container::before {
+    content: '';
+    position: absolute;
+    width: 414px;
+    height: 414px;
+    transform: rotate(-45.079deg);
+    border-radius: 414px;
+    opacity: 0.6;
+    background: var(--color-blur-two);
+    filter: blur(100px);
+    top: 227px;
+    right: 1118px;
+  }
+  .hero-container::after {
+    content: '';
+    position: absolute;
+    width: 316px;
+    height: 316px;
+    transform: rotate(-45.074deg);
+    border-radius: 316px;
+    opacity: 0.3;
+    background: var(--color-blur-three);
+    filter: blur(100px);
+    top: 248px;
+    right: 740px;
+  }
+}
+@media only screen and (min-width: 1280px) {
+  .hero-container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  .hero-tittle-text {
+    padding-top: 68px;
+  }
+}
 .hero-tittle {
   max-width: 332px;
-  height: auto;
   font-family: DM Sans, sans-serif;
   font-size: 36px;
   font-weight: 500;
-  line-height: 39.6px;
-  letter-spacing: -1.62px;
+  line-height: 1.1;
+  letter-spacing: -1.2px;
   margin: 0 auto;
   margin-bottom: 14px;
 }
@@ -27,8 +99,7 @@
   .hero-tittle {
     max-width: 698px;
     font-size: 60px;
-    line-height: 66px;
-    letter-spacing: -2.7px;
+    line-height: 1.1;
     margin-bottom: 16px;
   }
 }
@@ -67,21 +138,19 @@
     margin-bottom: 32px;
   }
 }
-
-.hero-btn-container {
+.hero-btn-list {
   display: flex;
   gap: 8px;
-  margin: 0 auto;
-  margin-bottom: 40px;
+  margin-bottom: 34px;
 }
 @media only screen and (min-width: 768px) {
-  .hero-btn-container {
+  .hero-btn-list {
     gap: 11px;
     margin-bottom: 64px;
   }
 }
 @media only screen and (min-width: 1280px) {
-  .hero-btn-container {
+  .hero-btn-list {
     margin-bottom: 0;
   }
 }
@@ -95,7 +164,7 @@
   letter-spacing: -0.63px;
   border: 0;
   border-radius: 60px;
-  background: var(--light-green, #93abae);
+  background: var(--light-green-color);
   padding: 14px 28px;
   display: block;
 }
@@ -130,16 +199,31 @@
 }
 .hero-rectangle {
   position: relative;
-  background-image: url(/img/heroimg/Mask-group335@2x.png);
+  background-image: url(/img/heroimg/Mask-group335.png);
   background-repeat: no-repeat;
   background-size: cover;
+  max-width: 335px;
+  border-radius: 24px;
+}
+@media (min-device-pixel-ratio: 2),
+  (min-resolution: 192dpi),
+  (min-resolution: 2dppx) {
+  .hero-rectangle {
+    background-image: url(/img/heroimg/Mask-group335@2x.png);
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-rectangle {
+    max-width: 426px;
+    padding-bottom: 79px;
+  }
 }
 .hero-list-img {
   display: flex;
   position: relative;
-  padding-top: 18px;
-  padding-left: 18px;
-  padding-right: 24px;
+  margin-bottom: 13px;
+  margin-left: 24px;
 }
 @media only screen and (min-width: 768px) {
   .hero-list-img {
@@ -147,18 +231,24 @@
   }
 }
 .hero-img-man1 {
+  position: relative;
+  left: -8px;
+  top: 24px;
+  z-index: 4;
 }
 
 .hero-img-woman {
-  left: -120px;
-  top: 25px;
-  z-index: 2;
+  position: relative;
+  left: -18px;
+  top: 24px;
+  z-index: 3;
 }
 
 .hero-img-man2 {
-  top: 50px;
-  left: 55px;
-  z-index: 5;
+  position: relative;
+  top: 24px;
+  left: -26px;
+  z-index: 2;
 }
 .hero-clients {
   color: var(--main-darkblue-color);
@@ -170,6 +260,7 @@
   text-transform: uppercase;
   margin-left: 24px;
   margin-bottom: 52px;
+  margin-top: 40px;
 }
 @media only screen and (min-width: 768px) {
   .hero-clients {
@@ -180,36 +271,40 @@
   display: flex;
   align-items: center;
   gap: 14px;
-  margin-left: 24px;
-  margin-right: 24px;
+  padding-left: 18px;
+  padding-right: 18px;
   padding-bottom: 48px;
 }
+@media only screen and (min-width: 768px) {
+  .hero-container-price {
+    padding-bottom: 0;
+  }
+}
+
 .hero-price {
   color: var(--main-darkblue-color);
-  /* color: #ffffff; */
   font-family: DM Sans, sans-serif;
   font-size: 48px;
-  line-height: 52.8px;
+  line-height: 1.1;
   letter-spacing: -2.16px;
 }
 @media only screen and (min-width: 768px) {
   .hero-price {
     font-size: 60px;
-    line-height: 66px;
+    line-height: 1.1;
     letter-spacing: -2.7px;
   }
 }
 .hero-dream {
   color: var(--main-darkblue-color);
-  /* color: #ffffff; */
   font-family: DM Sans, sans-serif;
   font-size: 14px;
-  line-height: 19.6px;
+  line-height: 1.4;
   letter-spacing: -0.63px;
 }
 @media only screen and (min-width: 768px) {
   .hero-dream {
-    max-width: 208px;
+    width: 208px;
     font-size: 18px;
     line-height: 19.8px;
     letter-spacing: -0.81px;
@@ -218,7 +313,15 @@
 .hero-img-ceo {
   position: absolute;
   top: 35px;
-  right: -12px;
+  left: 217px;
+  border-radius: 24px;
+}
+@media only screen and (min-width: 768px) {
+  .hero-img-ceo {
+    width: 233px;
+    height: 233px;
+    left: 305px;
+  }
 }
 .hero-img-yacht {
   margin: 0 auto;
@@ -227,5 +330,7 @@
 @media only screen and (min-width: 768px) {
   .hero-img-yacht {
     margin-bottom: 22px;
+    width: 378px;
+    height: 221px;
   }
 }
