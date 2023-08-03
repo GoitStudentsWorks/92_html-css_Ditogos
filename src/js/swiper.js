@@ -18,14 +18,14 @@ const swiper = new Swiper('.swiper', {
   speed: 100,
 
   breakpoints: {
-   375: {
-     slidesPerView: 1,
-   },
-   768: {
-     slidesPerView: 2,
-     spaceBetween: 16
-     },
-   1280: {
+  375: {
+    slidesPerView: 1,
+  },
+  768: {
+  slidesPerView: 2,
+    spaceBetween: 16
+    },
+  1280: {
     slidesPerView: 3,
       spaceBetween: 16
     }
