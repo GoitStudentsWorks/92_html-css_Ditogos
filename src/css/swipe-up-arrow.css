@@ -2,11 +2,12 @@
 }
 
 .btn-top {
-    display: flex;
-    justify-content: flex-end;
+    /* display: flex;
+    justify-content: flex-end; */
+    margin-left: 0 auto;
     position: fixed;
-    bottom: 32px;
-    right: 32px;
+    bottom: 20px;
+    right: 20px;
     z-index: 999;
 }
 
@@ -20,4 +21,11 @@
 }
 
 .btn-back{
+}
+
+@media screen and (min-width: 768px) and (min-width: 1280px){
+    .btn-top{
+    bottom: 32px;
+    right: 32px;
+    }
 }
