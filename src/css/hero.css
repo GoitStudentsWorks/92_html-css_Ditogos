@@ -30,6 +30,7 @@
   filter: blur(100px);
   top: 413px;
   right: 176px;
+
 }
 @media only screen and (min-width: 768px) {
   .hero-container::before {
@@ -44,6 +45,7 @@
     filter: blur(100px);
     top: 552px;
     right: 540px;
+   
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -72,6 +74,7 @@
     filter: blur(100px);
     top: 248px;
     right: 740px;
+    z-index: -1;
   }
 }
 @media only screen and (min-width: 1280px) {
@@ -160,7 +163,7 @@
   font-family: DM Sans, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 15.4px;
+  line-height: 1.1;
   letter-spacing: -0.63px;
   border: 0;
   border-radius: 60px;
@@ -168,21 +171,25 @@
   padding: 14px 28px;
   display: block;
 }
+.hero-btn:hover,
+.hero-btn:focus {
+  background: #88B3B9;
+}
 @media only screen and (min-width: 768px) {
   .hero-btn {
+    min-width: 150px;
     font-size: 18px;
-    line-height: 19.8px;
     letter-spacing: -0.81px;
   }
 }
 .hero-btn-explore {
-  min-width: 130px;
+  min-width: 104px;
   background-color: transparent;
   color: var(--white-title-color);
   font-family: DM Sans, sans-serif;
   font-size: 14px;
   font-weight: 700;
-  line-height: 15.4px;
+  line-height: 1.1;
   letter-spacing: -0.63px;
   border: 0;
   border-radius: 60px;
@@ -190,10 +197,16 @@
   padding: 14px 28px;
   display: block;
 }
+.hero-btn-explore:hover,
+.hero-btn-explore:focus {
+  color:var(--light-green-color);
+  border-color: var(--light-green-color);
+}
 @media only screen and (min-width: 768px) {
   .hero-btn-explore {
+    min-width: 117px;
     font-size: 18px;
-    line-height: 19.8px;
+    line-height: 1.1;
     letter-spacing: -0.81px;
   }
 }
