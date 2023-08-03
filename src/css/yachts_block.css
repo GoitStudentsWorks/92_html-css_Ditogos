@@ -35,13 +35,20 @@
   }
 }
 
+/* 
+/* @media only screen and (min-width: 375px) {
+  .background-curves {
+    display: none;
+  }
+} */
+
 @media only screen and (min-width: 1280px) {
   .background-curves {
     position: absolute;
     opacity: 0.2;
     left: 5px;
     top: 2px;
-    width: 1588px;
+    width: 100%;
     z-index: -1;
     transform: rotate(359deg);
     background-image: url(/img/mob_webp/loopergroup.png);
