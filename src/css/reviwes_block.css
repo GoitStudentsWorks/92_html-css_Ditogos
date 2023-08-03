@@ -1,9 +1,5 @@
 
 
-.container-reviews {
-    margin: 0;
-}
-
 .reviews-subtitle {
     font-family: DM Sans, sans-serif;
     font-size: 24px;
@@ -110,11 +106,6 @@
 
 
 
-
-.swiper-pagination-bullet::after{
-
-}
-
 .button{
     background-color: #93ABAE;
     border-radius: 8px;
@@ -133,18 +124,11 @@
 }
 
 @media screen and (min-width: 768px) and (max-width: 1279px) {
-    
-
-
     .reviews-box {
-        /* display: flex;
-        flex-wrap: wrap;
-        align-items: center;
-        margin-top: 32px;
-        margin-bottom: 64px; */
+    
         display: flex;
-            flex-direction: column;
-            justify-content: space-between;
+        flex-direction: column;
+        justify-content: space-between;
     }
 
     .reviews-subtitle {
