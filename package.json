@@ -5,7 +5,7 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Project_Team_12/",
+    "build": "vite build --base=/92_html-css_Ditogos/",
     "preview": "vite preview"
   },
   "devDependencies": {
