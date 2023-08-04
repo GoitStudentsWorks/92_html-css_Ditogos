@@ -35,13 +35,6 @@
   }
 }
 
-/* 
-/* @media only screen and (min-width: 375px) {
-  .background-curves {
-    display: none;
-  }
-} */
-
 @media only screen and (min-width: 1280px) {
   .background-curves {
     position: absolute;
@@ -63,7 +56,6 @@
 }
 
 .gradient {
-  /* position: absolute; */
   width: 320px;
   height: 250px;
   transform: rotate(-44.916deg);
@@ -294,7 +286,6 @@
 
 .swiper-box {
   margin: 0 auto;
-  /* width: 1160px; */
   padding: 0;
 }
 
@@ -397,9 +388,6 @@
 
 @media only screen and (min-width: 1280px) {
   .swiper-button-prev {
-    /* max-width: 1280px;
-    top: -289px;
-    left: 0; */
     transform: translateY(-300px);
     top: 101%;
     left: calc(50% - 601px);
@@ -408,8 +396,6 @@
 
 .swiper-button-next {
   position: relative;
-  /* top: -20px;
-  right: -165px; */
   top: 101%;
   right: calc(50% - 339px);
   transform: translateY(-150%);
@@ -418,10 +404,6 @@
 @media only screen and (min-width: 768px) {
   .swiper-button-next {
     max-width: 767px;
-    /* top: -8px;
-    right: -367px;
-    top: -85px;
-    right: -375px; */
     transform: translateY(-50%);
     top: 101%;
     left: calc(50% - (-12px));
@@ -430,9 +412,6 @@
 
 @media only screen and (min-width: 1280px) {
   .swiper-button-next {
-    /* max-width: 1440px; */
-    /* top: -318px;
-    right: -1053px; */
     transform: translateY(-330px);
     top: 101%;
     left: calc(50% - (-552px));
